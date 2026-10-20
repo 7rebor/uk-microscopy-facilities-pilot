@@ -727,7 +727,7 @@
         "source": "https://www.cardiff.ac.uk/research-equipment/equipment/view/multiwavelength-bioluminescence-fluorescence-in-vivo-imaging-system"
       }
     ],
-    "contact": { "email": null, "name": null, "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub" },
+    "contact": { "email": "hayesaj@cardiff.ac.uk", "name": null, "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub" },
     "image": null,
     "sources": [
       { "url": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub", "checked": "2026-10-20", "notes": "Official hub technique summary and equipment table." },
@@ -972,7 +972,7 @@
         "source": "https://www.southampton.ac.uk/biu/equipment/equipment/photo.page"
       }
     ],
-    "contact": { "email": "daj1u06@soton.ac.uk", "name": "Widefield, confocal and lightsheet microscopy contact", "source": "https://www.southampton.ac.uk/biu/contact.page" },
+    "contact": { "email": "P.Goggin@soton.ac.uk", "name": "Widefield, confocal and lightsheet microscopy contact", "source": "https://www.southampton.ac.uk/biu/contact.page" },
     "image": null,
     "sources": [
       { "url": "https://www.southampton.ac.uk/biu/", "checked": "2026-10-20", "notes": "Official unit scope, joint funding and light/electron microscopy services." },
@@ -1313,6 +1313,391 @@
       { "url": "https://www.kcl.ac.uk/research/facilities/imaging", "checked": "2026-10-20", "notes": "Official Imaging facilities inventory with the CDN multiuser instrument names, capabilities, location and contact." },
       { "url": "https://www.kcl.ac.uk/visit/new-hunts-house", "checked": "2026-10-20", "notes": "Official building location page." },
       { "url": "https://nominatim.openstreetmap.org/search?q=New%20Hunt%27s%20House%2C%20London&format=jsonv2&limit=2", "checked": "2026-10-20", "notes": "OpenStreetMap building-level geocoding for New Hunt's House." }
+    ],
+    "lastChecked": "2026-10-20",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "crick-advanced-light-microscopy",
+    "name": "Crick Advanced Light Microscopy",
+    "institution": "The Francis Crick Institute",
+    "location": {
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "Francis Crick Institute",
+          "building": "The Francis Crick Institute",
+          "address": "1 Midland Road, London NW1 1AT"
+        }
+      ]
+    },
+    "access": {
+      "status": "unknown",
+      "evidence": "The reviewed pages describe support for Crick research groups but do not state whether external users can access the facility.",
+      "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy"
+    },
+    "techniques": [
+      "confocal",
+      "spinning-disk",
+      "multiphoton",
+      "flim",
+      "lightsheet",
+      "tirf",
+      "widefield-fluorescence",
+      "brightfield",
+      "other"
+    ],
+    "instruments": [
+      {
+        "name": "Zeiss LSM880 NLO inverted",
+        "manufacturer": "Zeiss",
+        "model": "LSM880 NLO",
+        "type": "multiphoton-microscope",
+        "techniques": ["confocal", "multiphoton"],
+        "evidence": "The equipment page lists the Zeiss LSM880 NLO inverted system.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Zeiss LSM980 NLO",
+        "manufacturer": "Zeiss",
+        "model": "LSM980 NLO",
+        "type": "multiphoton-microscope",
+        "techniques": ["confocal", "multiphoton"],
+        "evidence": "The equipment page lists the Zeiss LSM980 NLO system.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Zeiss Airyscan LSM880 inverted",
+        "manufacturer": "Zeiss",
+        "model": "LSM880 with Airyscan",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "super-resolution"],
+        "evidence": "The equipment page lists Zeiss LSM880 Airyscan systems.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "LaVision BioTec UltraMicroscope II",
+        "manufacturer": "LaVision BioTec",
+        "model": "UltraMicroscope II",
+        "type": "lightsheet-microscope",
+        "techniques": ["lightsheet"],
+        "evidence": "The equipment page lists a LaVision BioTec UltraMicroscope II.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Leica FALCON SP8",
+        "manufacturer": "Leica",
+        "model": "FALCON SP8",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "flim"],
+        "evidence": "The equipment page lists the Leica FALCON SP8 system.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Olympus TIRF IX83",
+        "manufacturer": "Olympus",
+        "model": "IX83",
+        "type": "tirf-microscope",
+        "techniques": ["tirf"],
+        "evidence": "The equipment page lists the Olympus TIRF IX83.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Zeiss Apotome.2",
+        "manufacturer": "Zeiss",
+        "model": "Apotome.2",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "The equipment page lists a Zeiss Apotome.2.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Leica SP8 inverted 3NW",
+        "manufacturer": "Leica",
+        "model": "SP8",
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "The equipment page lists the Leica SP8 Inverted 3NW system.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Leica SP8 inverted 5SW",
+        "manufacturer": "Leica",
+        "model": "SP8",
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "The equipment page lists the Leica SP8 Invert 5SW system.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Nikon CSU-W1 spinning disk",
+        "manufacturer": "Nikon",
+        "model": "CSU-W1",
+        "type": "spinning-disk-microscope",
+        "techniques": ["spinning-disk"],
+        "evidence": "The equipment page lists a Nikon CSU-W1 spinning-disk system.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Zeiss LSM710 inverted with AFM",
+        "manufacturer": "Zeiss",
+        "model": "LSM710",
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "The equipment page lists a Zeiss LSM710 inverted system with AFM.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Zeiss LSM710 upright",
+        "manufacturer": "Zeiss",
+        "model": "LSM710",
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "The equipment page lists a Zeiss LSM710 upright system.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Nikon A1R upright",
+        "manufacturer": "Nikon",
+        "model": "A1R",
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "The equipment page lists a Nikon A1R upright system.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Nikon LTTL1",
+        "manufacturer": "Nikon",
+        "model": "LTTL1",
+        "type": "unknown",
+        "techniques": [],
+        "evidence": "The equipment page lists a Nikon LTTL1 system; the reviewed listing does not specify its modality.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Nikon LTTL2",
+        "manufacturer": "Nikon",
+        "model": "LTTL2",
+        "type": "unknown",
+        "techniques": [],
+        "evidence": "The equipment page lists a Nikon LTTL2 system; the reviewed listing does not specify its modality.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      },
+      {
+        "name": "Nikon LTTL3",
+        "manufacturer": "Nikon",
+        "model": "LTTL3",
+        "type": "unknown",
+        "techniques": [],
+        "evidence": "The equipment page lists a Nikon LTTL3 system; the reviewed listing does not specify its modality.",
+        "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees"
+      }
+    ],
+    "contact": {
+      "email": "kurt.anderson@crick.ac.uk",
+      "name": "Kurt Anderson",
+      "source": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy"
+    },
+    "image": null,
+    "sources": [
+      {
+        "url": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy",
+        "checked": "2026-10-20",
+        "notes": "Official Advanced Light Microscopy overview identifies the service, head of facility, general imaging methods and institute address."
+      },
+      {
+        "url": "https://www.crick.ac.uk/research/platforms-and-facilities/light-microscopy/equipment-and-fees",
+        "checked": "2026-10-20",
+        "notes": "Official equipment listing names the facility's imaging systems and confirms its listed modality range."
+      }
+    ],
+    "lastChecked": "2026-10-20",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "durham-biosciences-light-microscopy",
+    "name": "Biosciences Light Microscopy Facility",
+    "institution": "Durham University",
+    "location": {
+      "city": "Durham",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "Department of Biosciences",
+          "building": "Department of Biosciences",
+          "address": "Stockton Road, Durham DH1 3LE"
+        }
+      ]
+    },
+    "access": {
+      "status": "external-and-internal",
+      "evidence": "The official page says equipment is available to university staff and students, other University departments, and commercial clients.",
+      "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/"
+    },
+    "techniques": [
+      "widefield-fluorescence",
+      "confocal",
+      "lightsheet",
+      "tirf",
+      "multiphoton",
+      "flim",
+      "sim",
+      "super-resolution"
+    ],
+    "instruments": [
+      {
+        "name": "Leica SP5 laser-scanning confocal microscope",
+        "manufacturer": "Leica",
+        "model": "SP5",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "flim"],
+        "evidence": "The confocal page lists a Leica SP5 and identifies functional imaging, FLIM and FCCS capabilities.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/confocal-microscopy/"
+      },
+      {
+        "name": "Zeiss LSM 800 with Airyscan",
+        "manufacturer": "Zeiss",
+        "model": "LSM 800",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "super-resolution"],
+        "evidence": "The confocal page lists a Zeiss 800 LSCM with Airyscan.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/confocal-microscopy/"
+      },
+      {
+        "name": "Zeiss LSM 880 with Airyscan",
+        "manufacturer": "Zeiss",
+        "model": "LSM 880",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "super-resolution"],
+        "evidence": "The confocal page lists a Zeiss 880 LSCM with Airyscan.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/confocal-microscopy/"
+      },
+      {
+        "name": "Zeiss LSM 980 with Airyscan 2 and multiphoton",
+        "manufacturer": "Zeiss",
+        "model": "LSM 980",
+        "type": "multiphoton-microscope",
+        "techniques": ["confocal", "multiphoton", "super-resolution"],
+        "evidence": "The confocal page identifies the LSM 980 with Airyscan 2, LSM Plus and multiphoton capabilities.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/confocal-microscopy/"
+      },
+      {
+        "name": "Zeiss Lightsheet Z.1",
+        "manufacturer": "Zeiss",
+        "model": "Lightsheet Z.1",
+        "type": "lightsheet-microscope",
+        "techniques": ["lightsheet"],
+        "evidence": "The light-sheet page lists the Zeiss Lightsheet Z.1 system.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/lightsheet/"
+      },
+      {
+        "name": "Zeiss Lattice Lightsheet 7",
+        "manufacturer": "Zeiss",
+        "model": "Lattice Lightsheet 7",
+        "type": "lightsheet-microscope",
+        "techniques": ["lightsheet"],
+        "evidence": "The light-sheet page says the Zeiss Lattice Lightsheet 7 was installed in July 2024.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/lightsheet/"
+      },
+      {
+        "name": "GE Healthcare OMX V4.0 / Applied Precision OMX BLAZE",
+        "manufacturer": "GE Healthcare / Applied Precision",
+        "model": "OMX V4.0 / OMX BLAZE",
+        "type": "super-resolution-microscope",
+        "techniques": ["widefield-fluorescence", "sim", "tirf", "super-resolution"],
+        "evidence": "The super-resolution page identifies the OMX BLAZE system and lists widefield, 3D-SIM, TIRF and localization microscopy modes.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/bioimaging-super-res/"
+      },
+      {
+        "name": "Zeiss Axiovert 200M with Apotome",
+        "manufacturer": "Zeiss",
+        "model": "Axiovert 200M with Apotome",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "The widefield page identifies the Zeiss Axiovert 200M Apotome as a fluorescence microscope with optical sectioning.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/zeiss-apotome/"
+      },
+      {
+        "name": "Zeiss Cell Observer",
+        "manufacturer": "Zeiss",
+        "model": "Cell Observer",
+        "type": "live-cell-imager",
+        "techniques": ["widefield-fluorescence", "live-cell-imaging"],
+        "evidence": "The facility's widefield equipment list includes a Zeiss Cell Observer.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/zeiss-apotome/"
+      },
+      {
+        "name": "Nikon SMZ18 stereo microscope",
+        "manufacturer": "Nikon",
+        "model": "SMZ18",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield"],
+        "evidence": "The widefield equipment list includes the Nikon SMZ18 stereo microscope.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/zeiss-apotome/"
+      },
+      {
+        "name": "Leica DM2500",
+        "manufacturer": "Leica",
+        "model": "DM2500",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield"],
+        "evidence": "The widefield equipment list includes the Leica DM2500.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/zeiss-apotome/"
+      },
+      {
+        "name": "Leica DMI 3000 with microinjection",
+        "manufacturer": "Leica",
+        "model": "DMI 3000",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield"],
+        "evidence": "The widefield equipment list includes a Leica DMI 3000 with microinjection.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/zeiss-apotome/"
+      },
+      {
+        "name": "Zeiss Axioskop 40",
+        "manufacturer": "Zeiss",
+        "model": "Axioskop 40",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield"],
+        "evidence": "The widefield equipment list includes a Zeiss Axioskop 40.",
+        "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/zeiss-apotome/"
+      }
+    ],
+    "contact": {
+      "email": "bioimaging@durham.ac.uk",
+      "name": null,
+      "source": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/"
+    },
+    "image": null,
+    "sources": [
+      {
+        "url": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/",
+        "checked": "2026-10-20",
+        "notes": "Official facility overview identifies equipment access including commercial clients, light microscopy modalities, contact email, and departmental postal address."
+      },
+      {
+        "url": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/confocal-microscopy/",
+        "checked": "2026-10-20",
+        "notes": "Official confocal equipment page lists the Leica SP5 and Zeiss 800, 880 and 980 systems and their capabilities."
+      },
+      {
+        "url": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/lightsheet/",
+        "checked": "2026-10-20",
+        "notes": "Official light-sheet page identifies the Zeiss Lightsheet Z.1 and Lattice Lightsheet 7."
+      },
+      {
+        "url": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/bioimaging-super-res/",
+        "checked": "2026-10-20",
+        "notes": "Official super-resolution page identifies the OMX system and SIM, TIRF and localization imaging modes."
+      },
+      {
+        "url": "https://www.durham.ac.uk/departments/academic/biosciences/research/services/bioimaging/light-microscopy-facility/zeiss-apotome/",
+        "checked": "2026-10-20",
+        "notes": "Official widefield equipment page lists the Apotome and other named widefield systems."
+      }
     ],
     "lastChecked": "2026-10-20",
     "reviewStatus": "verified"

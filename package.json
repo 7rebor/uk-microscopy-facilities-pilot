@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "discover": "node scripts/discover.mjs"
+    "discover": "node scripts/discover.mjs",
+    "archive:scrape": "node scripts/archive-html-scrape.mjs",
+    "extract:html": "node scripts/extract-html-scrape.mjs"
   },
   "devDependencies": {
     "playwright": "^1.56.1"

@@ -92,6 +92,10 @@ function createLink(label, url) {
   return link;
 }
 
+function matchesSearchQuery(value, query) {
+  return value.toLocaleLowerCase().includes(query);
+}
+
 function renderFacility(facility) {
   const card = document.createElement("article");
   card.className = "facility-card";
@@ -150,22 +154,49 @@ function renderFacility(facility) {
     body.append(location);
   }
 
-  const techniqueLabel = document.createElement("p");
+  const techniqueDetails = document.createElement("details");
+  techniqueDetails.className = "capability-details";
+  const techniqueLabel = document.createElement("summary");
   techniqueLabel.className = "label";
   techniqueLabel.textContent = "Techniques";
   const techniques = document.createElement("div");
   techniques.className = "tag-group";
-  for (const id of facility.techniques) {
+  const query = searchInput.value.trim().toLocaleLowerCase();
+  const selectedTechniques = techniqueFilter.value
+    ? facility.techniques.filter((id) => id === techniqueFilter.value)
+    : facility.techniques;
+  const matchingTechniques = selectedTechniques.filter((id) =>
+    matchesSearchQuery(`${id} ${techniqueLabels().get(id) ?? id}`, query),
+  );
+  const displayedTechniques = query && matchingTechniques.length
+    ? matchingTechniques
+    : selectedTechniques;
+  for (const id of displayedTechniques) {
     techniques.append(createTag(techniqueLabels().get(id) ?? id));
   }
-  body.append(techniqueLabel, techniques);
+  techniqueDetails.append(techniqueLabel, techniques);
+  body.append(techniqueDetails);
 
-  const instrumentLabel = document.createElement("p");
+  const instrumentDetails = document.createElement("details");
+  instrumentDetails.className = "capability-details";
+  const instrumentLabel = document.createElement("summary");
   instrumentLabel.className = "label";
-  instrumentLabel.textContent = "Instruments and manufacturers";
+  instrumentLabel.textContent = "Instruments";
   const instruments = document.createElement("div");
   instruments.className = "tag-group";
-  for (const instrument of facility.instruments) {
+  const selectedInstruments = instrumentFilter.value
+    ? facility.instruments.filter(({ type }) => type === instrumentFilter.value)
+    : facility.instruments;
+  const matchingInstruments = selectedInstruments.filter(({ name, manufacturer, model, type }) =>
+    matchesSearchQuery(
+      [name, manufacturer, model, instrumentLabels().get(type), type].filter(Boolean).join(" "),
+      query,
+    ),
+  );
+  const displayedInstruments = query && matchingInstruments.length
+    ? matchingInstruments
+    : selectedInstruments;
+  for (const instrument of displayedInstruments) {
     const name = instrument.name || [instrument.manufacturer, instrument.model].filter(Boolean).join(" ");
     const description = [
       name,
@@ -176,7 +207,8 @@ function renderFacility(facility) {
       .filter(Boolean).join(" — ");
     if (description) instruments.append(createTag(description));
   }
-  body.append(instrumentLabel, instruments);
+  instrumentDetails.append(instrumentLabel, instruments);
+  body.append(instrumentDetails);
 
   const contact = document.createElement("p");
   contact.className = "contact";
