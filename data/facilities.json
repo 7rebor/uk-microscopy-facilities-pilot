@@ -1,0 +1,1320 @@
+[
+  {
+    "id": "imperial-film",
+    "name": "Facility for Imaging by Light Microscopy (FILM)",
+    "institution": "Imperial College London",
+    "location": {
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "South Kensington",
+          "building": "Sir Alexander Fleming Building",
+          "address": "Imperial College London, Exhibition Road, London SW7 2AZ",
+          "coordinates": { "lat": 51.49859, "lng": -0.17746 },
+          "coordinateAccuracy": "campus"
+        },
+        {
+          "site": "Hammersmith",
+          "building": "ICTEM Building (L-Block)",
+          "address": "Hammersmith Hospital Campus, Imperial College London, Du Cane Road, London W12 0NN",
+          "coordinates": { "lat": 51.5172, "lng": -0.2292 },
+          "coordinateAccuracy": "campus"
+        }
+      ]
+    },
+    "access": {
+      "status": "external-and-internal",
+      "evidence": "The official facility page says it is open to Imperial users and external users outside the university.",
+      "source": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/"
+    },
+    "techniques": [
+      "widefield-fluorescence",
+      "confocal",
+      "flim",
+      "sted",
+      "multiphoton",
+      "lightsheet",
+      "multiplex"
+    ],
+    "instruments": [
+      {
+        "name": "Leica CellDIVE",
+        "manufacturer": "Leica",
+        "model": "CellDIVE",
+        "type": "multiplex-imager",
+        "techniques": ["multiplex"],
+        "evidence": "The equipment page identifies a Leica CellDIVE imager for automated high-multiplexing whole-tissue analysis and detection of 60+ biomarkers at single-cell level.",
+        "source": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/equipment/"
+      },
+      {
+        "name": "HCF3 — Leica STELLARIS 8 inverted",
+        "manufacturer": "Leica",
+        "model": "STELLARIS 8 inverted with Tau-STED FALCON",
+        "type": "super-resolution-microscope",
+        "techniques": ["confocal", "sted", "flim"],
+        "locationDetails": "ICTEM (L-Block), room 304C",
+        "evidence": "The HCF3 equipment page identifies the Leica STELLARIS Tau-STED FALCON FLIM system and links HCF3 quick-start guides for the STELLARIS 8 inverted confocal and STED configurations.",
+        "source": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/equipment/hcf3/"
+      },
+      {
+        "name": "HCF4 — Nikon AX R MP with NSPARC",
+        "manufacturer": "Nikon",
+        "model": "AX R MP with NSPARC",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "multiphoton", "flim"],
+        "locationDetails": "Hammersmith Campus; room not specified",
+        "evidence": "The dedicated HCF4 page identifies a Nikon AX R MP with NSPARC on an ECLIPSE Ti2-E body and describes multiphoton, confocal, FLIM and super-resolution capabilities.",
+        "source": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/equipment/hcf4---nikon-ax-r-mp-nsparc/"
+      },
+      {
+        "name": "HCF2",
+        "manufacturer": null,
+        "model": null,
+        "type": "unknown",
+        "techniques": [],
+        "locationDetails": "ICTEM (L-Block), room 304C",
+        "evidence": "The facility page identifies HCF2 by its system name and says it was relocated to ICTEM room 304C; the reviewed page does not identify its manufacturer or model.",
+        "source": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/"
+      },
+      {
+        "name": "HWF1",
+        "manufacturer": null,
+        "model": null,
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "locationDetails": "ICTEM (L-Block), room 304B",
+        "evidence": "The facility page identifies HWF1 as a relocated system at ICTEM room 304B; the reviewed page does not identify its manufacturer or model.",
+        "source": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/"
+      },
+      {
+        "name": "HWF2 (formerly WF1)",
+        "manufacturer": null,
+        "model": null,
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "locationDetails": "ICTEM (L-Block); room not specified",
+        "evidence": "The facility page says WF1 is now located at ICTEM and is called HWF2; the reviewed page does not identify its manufacturer or model.",
+        "source": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/"
+      },
+      {
+        "name": "HSR1 — ZEISS Lattice SIM 5",
+        "manufacturer": "Zeiss",
+        "model": "Lattice SIM 5 on Axio Observer 7 SR RP",
+        "type": "super-resolution-microscope",
+        "techniques": ["sim", "widefield-fluorescence"],
+        "locationDetails": "ICTEM, planned for November 2026",
+        "status": "planned",
+        "evidence": "The dedicated page says HSR1 will be introduced in November 2026 and identifies a ZEISS Lattice SIM 5 on an Axio Observer 7 SR RP stand.",
+        "source": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/equipment/hsr1---zeiss-lattice-sim-5/"
+      }
+    ],
+    "contact": {
+      "email": "film-service@imperial.ac.uk",
+      "name": null,
+      "source": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/"
+    },
+    "image": null,
+    "sources": [
+      {
+        "url": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/",
+        "checked": "2026-10-15",
+        "notes": "Official overview and system relocation news; supports facility name, sites, core modalities, HCF/HWF system aliases and service email."
+      },
+      {
+        "url": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/equipment/",
+        "checked": "2026-10-15",
+        "notes": "Equipment overview identifying Leica CellDIVE and the facility's high-multiplexing whole-tissue imaging capability."
+      },
+      {
+        "url": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/equipment/hcf3/",
+        "checked": "2026-10-15",
+        "notes": "HCF3 system details, Leica STELLARIS 8 inverted/STED and FLIM capabilities, and Hammersmith room location."
+      },
+      {
+        "url": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/equipment/hcf4---nikon-ax-r-mp-nsparc/",
+        "checked": "2026-10-15",
+        "notes": "HCF4 instrument-specific page identifying the Nikon AX R MP with NSPARC."
+      },
+      {
+        "url": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/equipment/hsr1---zeiss-lattice-sim-5/",
+        "checked": "2026-10-15",
+        "notes": "HSR1 system details; marked planned because the page gives a November 2026 introduction date."
+      },
+      {
+        "url": "https://www.imperial.ac.uk/medicine/facility-for-imaging-by-light-microscopy/people/",
+        "checked": "2026-10-15",
+        "notes": "Official staff locations identify the Sir Alexander Fleming Building at South Kensington and ICTEM (L-Block) at Hammersmith."
+      },
+      {
+        "url": "https://www.imperial.ac.uk/visit/campuses/south-kensington/",
+        "checked": "2026-10-15",
+        "notes": "Official South Kensington campus postal address: Exhibition Road, London SW7 2AZ."
+      },
+      {
+        "url": "https://www.imperial.ac.uk/visit/campuses/hammersmith/",
+        "checked": "2026-10-15",
+        "notes": "Official Hammersmith campus postal address: Du Cane Road, London W12 0NN."
+      }
+    ],
+    "lastChecked": "2026-10-15",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "bristol-wolfson-bioimaging",
+    "name": "Wolfson Bioimaging Facility",
+    "institution": "University of Bristol",
+    "location": {
+      "city": "Bristol",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "Wolfson Bioimaging Facility",
+          "building": "Biomedical Sciences Building",
+          "address": "University Walk, Bristol BS8 1TD",
+          "coordinates": { "lat": 51.4575911, "lng": -2.5999701 },
+          "coordinateAccuracy": "building"
+        }
+      ]
+    },
+    "access": {
+      "status": "unknown",
+      "evidence": "The official facility site describes registration, training and access procedures but does not make an external-user eligibility claim on the reviewed pages.",
+      "source": "https://www.bristol.ac.uk/wolfson-bioimaging/access/"
+    },
+    "techniques": [
+      "widefield-fluorescence",
+      "confocal",
+      "multiphoton",
+      "flim",
+      "lightsheet",
+      "spinning-disk",
+      "tirf",
+      "single-molecule-imaging",
+      "live-cell-imaging",
+      "super-resolution"
+    ],
+    "instruments": [
+      {
+        "name": "ZEISS Z.1 light-sheet system",
+        "manufacturer": "Zeiss",
+        "model": "Z.1",
+        "type": "lightsheet-microscope",
+        "techniques": ["lightsheet"],
+        "evidence": "The facility's light-sheet page identifies its Zeiss Z.1 system.",
+        "source": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/lightsheet/"
+      },
+      {
+        "name": "Evident IXplore SpinSR with Yokogawa CSU-W1 SoRa",
+        "manufacturer": "Evident",
+        "model": "IXplore SpinSR / CSU-W1 SoRa",
+        "type": "spinning-disk-microscope",
+        "techniques": ["spinning-disk", "super-resolution"],
+        "evidence": "The facility identifies the IXplore SpinSR and CSU-W1 SoRa spinning-disk system for super-resolution imaging.",
+        "source": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/spinning-disk/"
+      },
+      {
+        "name": "Evident/Abbelight SAFe360",
+        "manufacturer": "Evident / Abbelight",
+        "model": "SAFe360",
+        "type": "tirf-microscope",
+        "techniques": ["tirf", "single-molecule-imaging", "super-resolution"],
+        "evidence": "The facility identifies the multi-laser, dual-camera SAFe360 system for TIRF and single-molecule super-resolution imaging.",
+        "source": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/total-internal-reflection-fluorescence-microscopy-/"
+      },
+      {
+        "name": "Leica SP8 tandem-scanning multiphoton system",
+        "manufacturer": "Leica",
+        "model": "SP8 tandem scanning",
+        "type": "multiphoton-microscope",
+        "techniques": ["confocal", "multiphoton"],
+        "evidence": "The facility's multiphoton page identifies a Leica SP8 tandem-scanning system with a Spectra-Physics DeepSee laser.",
+        "source": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/multiphoton/"
+      },
+      {
+        "name": "Leica SP8X FLIM/FCS system",
+        "manufacturer": "Leica",
+        "model": "SP8X",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "flim"],
+        "evidence": "The FLIM page identifies the Leica SP8X system with FCS and PicoQuant SymPhoTime-based time-correlated single photon counting FLIM.",
+        "source": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/fluorescence-lifetime-imaging-flim/"
+      },
+      {
+        "name": "Leica inverted confocal laser-scanning systems (8 systems)",
+        "manufacturer": "Leica",
+        "model": null,
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "The facility states that it has eight dedicated CLSM systems, all inverted Leica systems, with varying specifications; individual models are not named on the reviewed page.",
+        "source": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/confocal/"
+      },
+      {
+        "name": "IncuCyte S3",
+        "manufacturer": "Sartorius",
+        "model": "S3",
+        "type": "live-cell-imager",
+        "techniques": ["widefield-fluorescence", "live-cell-imaging"],
+        "evidence": "The facility's live-cell page identifies the Sartorius IncuCyte S3 automated live-cell imaging system.",
+        "source": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/live-cell-imaging/"
+      },
+      {
+        "name": "ZEISS Celldiscoverer 7",
+        "manufacturer": "Zeiss",
+        "model": "Celldiscoverer 7",
+        "type": "live-cell-imager",
+        "techniques": ["widefield-fluorescence", "live-cell-imaging"],
+        "evidence": "The facility's live-cell page identifies the Celldiscoverer 7 as an automated microscope with environmental control.",
+        "source": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/live-cell-imaging/"
+      },
+      {
+        "name": "Evident VS200 slide scanner",
+        "manufacturer": "Evident",
+        "model": "VS200",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "The facility's widefield page explicitly names the Evident VS200 slide scanner.",
+        "source": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/widefield/"
+      }
+    ],
+    "contact": {
+      "email": "wolfson-lm@bristol.ac.uk",
+      "name": null,
+      "source": "https://www.bristol.ac.uk/wolfson-bioimaging/access/"
+    },
+    "image": null,
+    "sources": [
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/",
+        "checked": "2026-10-15",
+        "notes": "Official facility page."
+      },
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/access/",
+        "checked": "2026-10-15",
+        "notes": "Official access and registration page, including the light microscopy team email."
+      },
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/",
+        "checked": "2026-10-15",
+        "notes": "Official overview of light microscopy modalities and recent acquisitions."
+      },
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/lightsheet/",
+        "checked": "2026-10-15",
+        "notes": "Official page for the Zeiss Z.1 light-sheet system."
+      },
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/spinning-disk/",
+        "checked": "2026-10-15",
+        "notes": "Official page for the Evident IXplore SpinSR and Yokogawa CSU-W1 SoRa."
+      },
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/total-internal-reflection-fluorescence-microscopy-/",
+        "checked": "2026-10-15",
+        "notes": "Official page for the Evident/Abbelight SAFe360 TIRF system."
+      },
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/multiphoton/",
+        "checked": "2026-10-15",
+        "notes": "Official page for the Leica SP8 tandem-scanning multiphoton system."
+      },
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/fluorescence-lifetime-imaging-flim/",
+        "checked": "2026-10-15",
+        "notes": "Official page for the Leica SP8X FLIM/FCS system."
+      },
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/confocal/",
+        "checked": "2026-10-15",
+        "notes": "Official overview of eight inverted Leica CLSM systems."
+      },
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/live-cell-imaging/",
+        "checked": "2026-10-15",
+        "notes": "Official page for IncuCyte S3 and Zeiss Celldiscoverer 7."
+      },
+      {
+        "url": "https://www.bristol.ac.uk/wolfson-bioimaging/equipment/light-microscopy/widefield/",
+        "checked": "2026-10-15",
+        "notes": "Official widefield equipment page identifying the VS200 scanner and numbered systems."
+      },
+      {
+        "url": "https://www.openstreetmap.org/?mlat=51.4575911&mlon=-2.5999701#map=18/51.4575911/-2.5999701",
+        "checked": "2026-10-15",
+        "notes": "OpenStreetMap geocoding identifies Biomedical Sciences Building, University Walk, Bristol BS8 1TD and supplies its building-level map point."
+      }
+    ],
+    "lastChecked": "2026-10-15",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "oxford-kennedy-imaging-suite",
+    "name": "Kennedy Imaging Suite (Advanced Microscopy Centre)",
+    "institution": "University of Oxford",
+    "location": {
+      "city": "Oxford",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "Kennedy Institute of Rheumatology",
+          "building": "Kennedy Institute of Rheumatology",
+          "address": "University of Oxford, Roosevelt Drive, Headington, Oxford OX3 7FY, UK",
+          "coordinates": { "lat": 51.7524332, "lng": -1.2146575 },
+          "coordinateAccuracy": "building"
+        }
+      ]
+    },
+    "access": {
+      "status": "unknown",
+      "evidence": "External-user eligibility has not been assessed for this directory entry.",
+      "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/access-booking-pricing-and-training"
+    },
+    "techniques": [
+      "brightfield",
+      "confocal",
+      "multiphoton",
+      "sim",
+      "super-resolution",
+      "lightsheet",
+      "tirf",
+      "live-cell-imaging"
+    ],
+    "instruments": [
+      {
+        "name": "ZEISS 880 Multi-photon",
+        "manufacturer": "Zeiss",
+        "model": "880",
+        "type": "multiphoton-microscope",
+        "techniques": ["multiphoton"],
+        "evidence": "The Kennedy Imaging Suite instrument list names the ZEISS Multiphoton and links it as the Zeiss 880 Multi-photon system.",
+        "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/advanced-imaging-suit"
+      },
+      {
+        "name": "ZEISS 880 Upright",
+        "manufacturer": "Zeiss",
+        "model": "880",
+        "type": "other-microscope",
+        "techniques": [],
+        "evidence": "Named in the Kennedy Imaging Suite instrument list; no additional modality is claimed here.",
+        "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/advanced-imaging-suit"
+      },
+      {
+        "name": "ZEISS Axioscan 7",
+        "manufacturer": "Zeiss",
+        "model": "Axioscan 7",
+        "type": "other-microscope",
+        "techniques": [],
+        "evidence": "Named in the Kennedy Imaging Suite instrument list; no additional modality is claimed here.",
+        "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/advanced-imaging-suit"
+      },
+      {
+        "name": "Olympus TIRF microscope",
+        "manufacturer": "Olympus",
+        "model": null,
+        "type": "tirf-microscope",
+        "techniques": ["tirf"],
+        "evidence": "The Kennedy Imaging Suite names an Olympus TIRF microscope.",
+        "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/advanced-imaging-suit"
+      },
+      {
+        "name": "Olympus FV1200 Laser Scanning Microscope",
+        "manufacturer": "Olympus",
+        "model": "FV1200",
+        "type": "confocal-microscope",
+        "techniques": ["brightfield", "confocal", "live-cell-imaging"],
+        "evidence": "The instrument page describes the FV1200 as a confocal laser-scanning microscope and specifies bright-field illumination and a CellVivo system for live-cell imaging.",
+        "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/olympus-fv1200"
+      },
+      {
+        "name": "LaVision UltraMicroscope II",
+        "manufacturer": "LaVision",
+        "model": "UltraMicroscope II",
+        "type": "lightsheet-microscope",
+        "techniques": ["lightsheet"],
+        "evidence": "The instrument page identifies the UltraMicroscope II as a light-sheet microscope for 3D imaging of large tissue samples and organs.",
+        "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/lavision-ultramicroscope-ii"
+      },
+      {
+        "name": "Olympus BX51",
+        "manufacturer": "Olympus",
+        "model": "BX51",
+        "type": "other-microscope",
+        "techniques": [],
+        "evidence": "Named in the Kennedy Imaging Suite instrument list; no additional modality is claimed here.",
+        "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/advanced-imaging-suit"
+      },
+      {
+        "name": "ZEISS Axioscope A1",
+        "manufacturer": "Zeiss",
+        "model": "Axioscope A1",
+        "type": "other-microscope",
+        "techniques": [],
+        "evidence": "Named in the Kennedy Imaging Suite instrument list; no additional modality is claimed here.",
+        "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/advanced-imaging-suit"
+      },
+      {
+        "name": "Total Internal Reflection Fluorescence Structured Illumination Microscope (TIRF-SIM)",
+        "manufacturer": null,
+        "model": null,
+        "type": "super-resolution-microscope",
+        "techniques": ["tirf", "sim", "super-resolution", "live-cell-imaging"],
+        "evidence": "The official page describes the custom-built eTIRF-SIM as a super-resolution microscope combining TIRF and SIM, and identifies it as suited to high-resolution live-cell imaging.",
+        "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-custom-design-imaging-suite/total-internal-reflection-fluorescence-structured-illumination-microscope-tirf-sim"
+      },
+      {
+        "name": "Biophotonic Correlative Optical Platform (BioCOP)",
+        "manufacturer": null,
+        "model": null,
+        "type": "other-microscope",
+        "techniques": ["lightsheet", "sim", "super-resolution"],
+        "status": "planned",
+        "locationDetails": "Technology Development Suite",
+        "evidence": "The official project page says BioCOP aims to establish a platform combining Lattice Light Sheet Microscopy and 3D Structured Illumination Microscopy; it is marked planned because the source describes an aim and future use, not current availability.",
+        "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-custom-design-imaging-suite/biophotonic-optical-platform"
+      }
+    ],
+    "contact": {
+      "email": "imaging-facility@kennedy.ox.ac.uk",
+      "name": null,
+      "source": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/access-booking-pricing-and-training"
+    },
+    "image": null,
+    "sources": [
+      {
+        "url": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-microscopy-centre",
+        "checked": "2026-10-20",
+        "notes": "Official Advanced Microscopy Centre landing page identifying the Kennedy and IDRM network and linking the Kennedy instrument suite, access information, and technology-development pages."
+      },
+      {
+        "url": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/advanced-imaging-suit",
+        "checked": "2026-10-20",
+        "notes": "Official Kennedy Imaging Suite list of named instruments. The directory entry captures light-microscopy instruments only; IVIS Spectrum and Micro CT are not mislabelled as microscopes. Joint Oxford-ZEISS Centre instruments at IDRM are not attributed to this address."
+      },
+      {
+        "url": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/lavision-ultramicroscope-ii",
+        "checked": "2026-10-20",
+        "notes": "Instrument-specific evidence for the LaVision UltraMicroscope II and light-sheet imaging."
+      },
+      {
+        "url": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-imaging-suit/olympus-fv1200",
+        "checked": "2026-10-20",
+        "notes": "Instrument-specific evidence for FV1200 confocal, bright-field, and live-cell imaging."
+      },
+      {
+        "url": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-custom-design-imaging-suite/technology-and-development",
+        "checked": "2026-10-20",
+        "notes": "Official listing of TIRF-SIM and BioCOP in the Technology and Development Suite."
+      },
+      {
+        "url": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-custom-design-imaging-suite/total-internal-reflection-fluorescence-structured-illumination-microscope-tirf-sim",
+        "checked": "2026-10-20",
+        "notes": "Instrument-specific evidence for eTIRF-SIM, super-resolution, TIRF, SIM, and live-cell imaging."
+      },
+      {
+        "url": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/advanced-custom-design-imaging-suite/biophotonic-optical-platform",
+        "checked": "2026-10-20",
+        "notes": "Evidence for BioCOP capabilities and project/planned status."
+      },
+      {
+        "url": "https://www.kennedy.ox.ac.uk/platforms-and-technologies/advanced-microscopy-centre/access-booking-pricing-and-training",
+        "checked": "2026-10-20",
+        "notes": "Official facility contact email and booking/training information; external access eligibility is not represented as a directory inclusion criterion."
+      },
+      {
+        "url": "https://www.kennedy.ox.ac.uk/about/contact-us",
+        "checked": "2026-10-20",
+        "notes": "Official postal address for the Kennedy Institute of Rheumatology."
+      },
+      {
+        "url": "https://www.openstreetmap.org/way/267300333",
+        "checked": "2026-10-20",
+        "notes": "OpenStreetMap building record for the Kennedy Institute of Rheumatology, supplying the building-level map point."
+      }
+    ],
+    "lastChecked": "2026-10-20",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "birmingham-balm",
+    "name": "Birmingham Advanced Light Microscopy (BALM)",
+    "institution": "University of Birmingham",
+    "location": {
+      "city": "Birmingham",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "Edgbaston Campus",
+          "building": "School of Biosciences, Building R27",
+          "address": "University of Birmingham, Edgbaston, Birmingham B15 2TT",
+          "coordinates": { "lat": 52.4504333, "lng": -1.9320033 },
+          "coordinateAccuracy": "campus"
+        }
+      ]
+    },
+    "access": {
+      "status": "unknown",
+      "evidence": "User eligibility is not assessed for directory inclusion.",
+      "source": "https://www.birmingham.ac.uk/facilities/balm"
+    },
+    "techniques": ["confocal", "tirf", "widefield-fluorescence", "live-cell-imaging"],
+    "instruments": [
+      {
+        "name": "Nikon A1R laser-scanning confocal and TIRF system",
+        "manufacturer": "Nikon",
+        "model": "A1R on Ti inverted microscope",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "tirf", "widefield-fluorescence", "live-cell-imaging"],
+        "evidence": "The facility identifies one Nikon Ti-based system combining A1R laser-scanning confocal and TIRF, with temperature/CO2-controlled live-cell imaging and a widefield/DIC detector.",
+        "source": "https://www.birmingham.ac.uk/facilities/balm/microscopes"
+      }
+    ],
+    "contact": { "email": null, "name": null, "source": "https://www.birmingham.ac.uk/facilities/balm/contact" },
+    "image": null,
+    "sources": [
+      { "url": "https://www.birmingham.ac.uk/facilities/balm", "checked": "2026-10-20", "notes": "Official facility description and live-cell imaging remit." },
+      { "url": "https://www.birmingham.ac.uk/facilities/balm/microscopes", "checked": "2026-10-20", "notes": "Official Nikon A1R confocal/TIRF system specifications." },
+      { "url": "https://www.birmingham.ac.uk/facilities/balm/contact", "checked": "2026-10-20", "notes": "Official School of Biosciences address and Building R27 campus map reference." },
+      { "url": "https://www.openstreetmap.org/?mlat=52.4504333&mlon=-1.9320033#map=16/52.4504/-1.9320", "checked": "2026-10-20", "notes": "OpenStreetMap Edgbaston Campus geocoding; campus-level marker, not a room-level point." }
+    ],
+    "lastChecked": "2026-10-20",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "cardiff-bioimaging-research-hub",
+    "name": "Bioimaging Research Hub",
+    "institution": "Cardiff University",
+    "location": {
+      "city": "Cardiff",
+      "region": "Wales",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "School of Biosciences",
+          "building": null,
+          "address": "Cardiff University, Museum Avenue, Cardiff CF10 3AX",
+          "coordinates": { "lat": 51.48717, "lng": -3.1800611 },
+          "coordinateAccuracy": "campus"
+        }
+      ]
+    },
+    "access": {
+      "status": "unknown",
+      "evidence": "User eligibility is not assessed for directory inclusion.",
+      "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub"
+    },
+    "techniques": ["brightfield", "widefield-fluorescence", "confocal", "flim", "super-resolution", "lightsheet", "spinning-disk", "live-cell-imaging", "multiplex"],
+    "instruments": [
+      {
+        "name": "Zeiss LSM 880 upright confocal with Airyscan",
+        "manufacturer": "Zeiss",
+        "model": "LSM 880 with Airyscan",
+        "type": "super-resolution-microscope",
+        "techniques": ["confocal", "super-resolution", "flim"],
+        "evidence": "The equipment listing identifies the LSM 880 with Airyscan and describes super-resolution, FCS and FLIM.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub"
+      },
+      {
+        "name": "Zeiss Cell Discoverer 7 automated microscope",
+        "manufacturer": "Zeiss",
+        "model": "Cell Discoverer 7",
+        "type": "live-cell-imager",
+        "techniques": ["confocal", "widefield-fluorescence", "super-resolution", "live-cell-imaging", "multiplex"],
+        "evidence": "The hub lists automated high-throughput, live-cell imaging with widefield and super-resolved confocal capabilities.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub"
+      },
+      {
+        "name": "Zeiss Lightsheet Z.1",
+        "manufacturer": "Zeiss",
+        "model": "Lightsheet Z.1",
+        "type": "lightsheet-microscope",
+        "techniques": ["lightsheet"],
+        "evidence": "The equipment table identifies a fluorescence light-sheet system with environmental control.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub"
+      },
+      {
+        "name": "Olympus IX71 spinning-disc confocal",
+        "manufacturer": "Olympus",
+        "model": "IX71 with Crest Optics X-Light V2",
+        "type": "spinning-disk-microscope",
+        "techniques": ["spinning-disk", "confocal", "live-cell-imaging"],
+        "evidence": "The equipment table identifies an inverted IX71 with X-Light V2 confocal imager, tri-line laser bank and sCMOS camera.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub"
+      },
+      {
+        "name": "Olympus BX61 automated upright microscope",
+        "manufacturer": "Olympus",
+        "model": "BX61",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield", "widefield-fluorescence"],
+        "evidence": "The facility lists brightfield, DIC and epifluorescence imaging with motorised acquisition of 3D image series.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub"
+      },
+      {
+        "name": "Olympus BX40 multimodal upright microscope",
+        "manufacturer": "Olympus",
+        "model": "BX40",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield", "widefield-fluorescence"],
+        "evidence": "The equipment table lists brightfield, darkfield, phase-contrast and epifluorescence.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub"
+      },
+      {
+        "name": "Olympus BX50 upright research microscope",
+        "manufacturer": "Olympus",
+        "model": "BX50",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield", "widefield-fluorescence"],
+        "evidence": "The facility identifies brightfield and epifluorescence capability.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub"
+      },
+      {
+        "name": "Objective Imaging Surveyor Slide Scanning System",
+        "manufacturer": "Objective Imaging",
+        "model": "Surveyor",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield"],
+        "evidence": "The facility identifies whole-slide scanning and mosaic stitching of histological sections under brightfield illumination.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/equipment/view/slide-scanning-microscope"
+      },
+      {
+        "name": "Zeiss PALM MicroBeam laser micro-dissector",
+        "manufacturer": "Zeiss",
+        "model": "PALM MicroBeam",
+        "type": "other-microscope",
+        "techniques": ["brightfield", "widefield-fluorescence"],
+        "evidence": "The facility describes a motorised Axio Observer microscope with brightfield and epifluorescence, an automated collection device and a 355 nm laser.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/equipment/view/zeiss-palm-microbeam-laser-micro-dissector"
+      },
+      {
+        "name": "Olympus IX71 inverted epifluorescence microscope",
+        "manufacturer": "Olympus",
+        "model": "IX71",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence", "brightfield", "live-cell-imaging"],
+        "evidence": "The facility lists RGB epifluorescence and phase-contrast imaging of live or fixed cells and tissue samples.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/equipment/view/inverted-epifluorescence-microscope-for-multiformat-imaging"
+      },
+      {
+        "name": "Leica DMLB epifluorescence and brightfield photomicroscope",
+        "manufacturer": "Leica",
+        "model": "DMLB",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield", "widefield-fluorescence"],
+        "evidence": "The facility lists brightfield and multichannel epifluorescence imaging of slide-mounted tissue samples.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/equipment/view/upright-microscope-for-brightfield-and-epifluorescence-microscopy"
+      },
+      {
+        "name": "Leica DMRB brightfield photomicroscope",
+        "manufacturer": "Leica",
+        "model": "DMRB",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield"],
+        "evidence": "The facility identifies the system for general brightfield photomicroscopy.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/equipment/view/upright-brightfield-microscope"
+      },
+      {
+        "name": "Biospace Lab PhotonIMAGER Optima",
+        "manufacturer": "Biospace Lab",
+        "model": "PhotonIMAGER Optima",
+        "type": "other-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "The hub lists the multiwavelength bioluminescence and fluorescence optical imaging system for kinetic and longitudinal studies.",
+        "source": "https://www.cardiff.ac.uk/research-equipment/equipment/view/multiwavelength-bioluminescence-fluorescence-in-vivo-imaging-system"
+      }
+    ],
+    "contact": { "email": null, "name": null, "source": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub" },
+    "image": null,
+    "sources": [
+      { "url": "https://www.cardiff.ac.uk/research-equipment/facilities/view/bioimaging-research-hub", "checked": "2026-10-20", "notes": "Official hub technique summary and equipment table." },
+      { "url": "https://www.openstreetmap.org/?mlat=51.48717&mlon=-3.1800611#map=17/51.48717/-3.18006", "checked": "2026-10-20", "notes": "OpenStreetMap Museum Avenue geocoding; used as an approximate campus marker." }
+    ],
+    "lastChecked": "2026-10-20",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "exeter-bioimaging-centre",
+    "name": "Bioimaging Centre Light Microscopy Facility",
+    "institution": "University of Exeter",
+    "location": {
+      "city": "Exeter",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "Streatham Campus",
+          "building": "Geoffrey Pope Building, Floor 1",
+          "address": "University of Exeter, Stocker Road, Exeter EX4 4QD, UK",
+          "coordinates": { "lat": 50.7367152, "lng": -3.5350462 },
+          "coordinateAccuracy": "building"
+        }
+      ]
+    },
+    "access": {
+      "status": "unknown",
+      "evidence": "User eligibility is not assessed for directory inclusion.",
+      "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/"
+    },
+    "techniques": ["widefield-fluorescence", "confocal", "multiphoton", "sim", "super-resolution", "lightsheet", "tirf", "spinning-disk"],
+    "instruments": [
+      {
+        "name": "Zeiss LSM 880 with Airyscan",
+        "manufacturer": "Zeiss",
+        "model": "LSM 880 with Airyscan",
+        "type": "super-resolution-microscope",
+        "techniques": ["confocal", "super-resolution"],
+        "evidence": "Listed on the Light Microscopy equipment page; the centre overview identifies Airyscan and 3D SIM as available super-resolution methods.",
+        "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/equipment/lightmicroscopy/"
+      },
+      {
+        "name": "Leica TCS SP8 Confocal Laser Scanning Microscope",
+        "manufacturer": "Leica",
+        "model": "TCS SP8",
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "Listed by name on the official Light Microscopy equipment page.",
+        "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/equipment/lightmicroscopy/"
+      },
+      {
+        "name": "Spinning Disc Confocal Microscope",
+        "manufacturer": null,
+        "model": null,
+        "type": "spinning-disk-microscope",
+        "techniques": ["spinning-disk", "confocal"],
+        "evidence": "The official equipment list identifies a spinning-disc confocal system.",
+        "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/equipment/lightmicroscopy/"
+      },
+      {
+        "name": "Visitron FRAP and TIRF Microscope (Olympus IX81)",
+        "manufacturer": "Olympus / Visitron",
+        "model": "IX81",
+        "type": "tirf-microscope",
+        "techniques": ["tirf", "widefield-fluorescence"],
+        "evidence": "The official equipment page lists the Visitron FRAP/TIRF system and identifies its Olympus IX81 microscope frame.",
+        "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/equipment/lightmicroscopy/"
+      },
+      {
+        "name": "Zeiss Elyra 7 lattice SIM",
+        "manufacturer": "Zeiss",
+        "model": "Elyra 7",
+        "type": "super-resolution-microscope",
+        "techniques": ["sim", "super-resolution"],
+        "evidence": "Listed by name on the official equipment page.",
+        "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/equipment/lightmicroscopy/"
+      },
+      {
+        "name": "Lightsheet — Luxendo TruLive 3D",
+        "manufacturer": "Luxendo",
+        "model": "TruLive 3D",
+        "type": "lightsheet-microscope",
+        "techniques": ["lightsheet"],
+        "evidence": "Listed by name on the official equipment page.",
+        "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/equipment/lightmicroscopy/"
+      },
+      {
+        "name": "Ultima 2P+ Two-Photon microscope",
+        "manufacturer": null,
+        "model": "Ultima 2P+",
+        "type": "multiphoton-microscope",
+        "techniques": ["multiphoton"],
+        "evidence": "Listed by name on the official equipment page.",
+        "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/equipment/lightmicroscopy/"
+      },
+      {
+        "name": "Acquifer Imaging Machine",
+        "manufacturer": "Acquifer",
+        "model": null,
+        "type": "live-cell-imager",
+        "techniques": [],
+        "evidence": "Listed by name on the official equipment page; no technique beyond the system name is inferred.",
+        "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/equipment/lightmicroscopy/"
+      },
+      {
+        "name": "Zeiss Axiophot",
+        "manufacturer": "Zeiss",
+        "model": "Axiophot",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "Listed by name on the official equipment page.",
+        "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/equipment/lightmicroscopy/"
+      }
+    ],
+    "contact": { "email": "bioimaging@exeter.ac.uk", "name": "Bioimaging Centre", "source": "https://www.exeter.ac.uk/research/facilities/bioimaging/bioimaging-contact/" },
+    "image": null,
+    "sources": [
+      { "url": "https://www.exeter.ac.uk/research/facilities/bioimaging/", "checked": "2026-10-20", "notes": "Official centre capabilities, user community and microscopy modalities." },
+      { "url": "https://www.exeter.ac.uk/research/facilities/bioimaging/equipment/lightmicroscopy/", "checked": "2026-10-20", "notes": "Official page reports 11 microscope systems and describes the modality breakdown; the individually named systems are recorded below." },
+      { "url": "https://www.exeter.ac.uk/research/facilities/bioimaging/bioimaging-contact/", "checked": "2026-10-20", "notes": "Exact facility floor, building, campus, postal address and general contact email." },
+      { "url": "https://www.openstreetmap.org/?mlat=50.7367152&mlon=-3.5350462#map=18/50.7367152/-3.5350462", "checked": "2026-10-20", "notes": "OpenStreetMap building-level geocoding for Geoffrey Pope (Biosciences)." }
+    ],
+    "lastChecked": "2026-10-20",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "southampton-biomedical-imaging-unit",
+    "name": "Biomedical Imaging Unit",
+    "institution": "University of Southampton and University Hospital Southampton",
+    "location": {
+      "city": "Southampton",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "Southampton General Hospital",
+          "building": "Laboratory and Pathology Block, Level B",
+          "address": "Mailpoint 12, Southampton General Hospital, Tremona Road, Southampton SO16 6YD",
+          "coordinates": { "lat": 50.9325418, "lng": -1.435113 },
+          "coordinateAccuracy": "campus"
+        }
+      ]
+    },
+    "access": {
+      "status": "unknown",
+      "evidence": "User eligibility is not assessed for directory inclusion.",
+      "source": "https://www.southampton.ac.uk/biu/"
+    },
+    "techniques": ["brightfield", "widefield-fluorescence", "confocal", "lightsheet"],
+    "instruments": [
+      {
+        "name": "Leica TCS-SP8 Laser Scanning Confocal Microscope",
+        "manufacturer": "Leica",
+        "model": "TCS-SP8",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "brightfield"],
+        "evidence": "The official instrument page lists a DMI-8 frame, spectral detectors and transmitted-light brightfield, DIC, polarising and phase-contrast modes.",
+        "source": "https://www.southampton.ac.uk/biu/equipment/equipment/confocal.page"
+      },
+      {
+        "name": "Leica SP5 Laser Scanning Confocal Microscope",
+        "manufacturer": "Leica",
+        "model": "SP5",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "brightfield"],
+        "evidence": "The official instrument page lists an inverted DMI600 frame, spectral detectors, and transmitted-light contrast modes.",
+        "source": "https://www.southampton.ac.uk/biu/equipment/equipment/confocal.page"
+      },
+      {
+        "name": "LaVision Light Sheet Ultramicroscope",
+        "manufacturer": "LaVision",
+        "model": "Ultramicroscope",
+        "type": "lightsheet-microscope",
+        "techniques": ["lightsheet"],
+        "evidence": "The official equipment page identifies the LaVision light-sheet system and describes its illumination, detector and sample volume.",
+        "source": "https://www.southampton.ac.uk/biu/equipment/equipment/confocal.page"
+      },
+      {
+        "name": "Nikon Eclipse 80i Photomicroscope (two systems)",
+        "manufacturer": "Nikon",
+        "model": "Eclipse 80i",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield", "widefield-fluorescence"],
+        "evidence": "The facility lists two Eclipse 80i systems with brightfield, polarising and DIC imaging.",
+        "source": "https://www.southampton.ac.uk/biu/equipment/equipment/photo.page"
+      },
+      {
+        "name": "Olympus BX-51 Photomicroscope",
+        "manufacturer": "Olympus",
+        "model": "BX-51",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield"],
+        "evidence": "The facility lists brightfield, darkfield and phase-contrast imaging.",
+        "source": "https://www.southampton.ac.uk/biu/equipment/equipment/photo.page"
+      },
+      {
+        "name": "Zeiss Axioskop2 MOT fluorescence microscope",
+        "manufacturer": "Zeiss",
+        "model": "Axioskop2 MOT",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "The facility lists an Axioskop2 MOT fluorescence microscope with DAPI, FITC, TRITC and EGFP filter cubes.",
+        "source": "https://www.southampton.ac.uk/biu/equipment/equipment/photo.page"
+      },
+      {
+        "name": "Olympus SZX9 low-power photomicroscope",
+        "manufacturer": "Olympus",
+        "model": "SZX9",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield", "widefield-fluorescence"],
+        "evidence": "The facility lists transmitted light, fibre-optic ring incident lighting and oblique fluorescence illumination with nine filter sets.",
+        "source": "https://www.southampton.ac.uk/biu/equipment/equipment/photo.page"
+      },
+      {
+        "name": "Nikon Diaphot inverted phase-contrast photomicroscope",
+        "manufacturer": "Nikon",
+        "model": "Diaphot",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield"],
+        "evidence": "The facility lists phase-contrast objectives and an electronic micromanipulator.",
+        "source": "https://www.southampton.ac.uk/biu/equipment/equipment/photo.page"
+      },
+      {
+        "name": "Zeiss STEMI SV11 dissecting microscope system",
+        "manufacturer": "Zeiss",
+        "model": "STEMI SV11",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield", "widefield-fluorescence"],
+        "status": "planned",
+        "evidence": "Listed by the facility under “Coming Soon” as a brightfield and epifluorescence dissecting microscope system.",
+        "source": "https://www.southampton.ac.uk/biu/equipment/equipment/photo.page"
+      },
+      {
+        "name": "Leica DMIRB inverted phase-contrast and fluorescence microscope",
+        "manufacturer": "Leica",
+        "model": "DMIRB",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield", "widefield-fluorescence"],
+        "status": "planned",
+        "evidence": "Listed by the facility under “Coming Soon” as an inverted phase-contrast and fluorescence microscope.",
+        "source": "https://www.southampton.ac.uk/biu/equipment/equipment/photo.page"
+      }
+    ],
+    "contact": { "email": "daj1u06@soton.ac.uk", "name": "Widefield, confocal and lightsheet microscopy contact", "source": "https://www.southampton.ac.uk/biu/contact.page" },
+    "image": null,
+    "sources": [
+      { "url": "https://www.southampton.ac.uk/biu/", "checked": "2026-10-20", "notes": "Official unit scope, joint funding and light/electron microscopy services." },
+      { "url": "https://www.southampton.ac.uk/biu/equipment/equipment/confocal.page", "checked": "2026-10-20", "notes": "Confocal and light-sheet techniques and named instrument specifications." },
+      { "url": "https://www.southampton.ac.uk/biu/equipment/equipment/photo.page", "checked": "2026-10-20", "notes": "Named photomicroscopes and optical contrast modalities." },
+      { "url": "https://www.southampton.ac.uk/biu/contact.page", "checked": "2026-10-20", "notes": "Official postal address and microscopy service contact." },
+      { "url": "https://www.southampton.ac.uk/biu/about/location.page", "checked": "2026-10-20", "notes": "Unit is on Level B of the Laboratory and Pathology Block at University Hospital Southampton." },
+      { "url": "https://www.openstreetmap.org/?mlat=50.9325418&mlon=-1.4351130#map=17/50.93254/-1.43511", "checked": "2026-10-20", "notes": "OpenStreetMap hospital-level map point." }
+    ],
+    "lastChecked": "2026-10-20",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "ucl-centre-cell-molecular-dynamics",
+    "name": "Centre for Cell & Molecular Dynamics (CCMD)",
+    "institution": "University College London",
+    "location": {
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "Rockefeller Building",
+          "building": "Rockefeller Building",
+          "address": "University College London, 21 University Street, London WC1E 6DE",
+          "coordinates": { "lat": 51.523732, "lng": -0.1342662 },
+          "coordinateAccuracy": "building"
+        },
+        {
+          "site": "Anatomy Building",
+          "building": "Anatomy Building",
+          "address": "University College London, Gower Street, London WC1E 6BT",
+          "coordinates": { "lat": 51.5238591, "lng": -0.1341273 },
+          "coordinateAccuracy": "campus"
+        }
+      ]
+    },
+    "access": {
+      "status": "unknown",
+      "evidence": "User eligibility is not assessed for directory inclusion.",
+      "source": "https://www.uclccmd.co.uk/booking"
+    },
+    "techniques": ["confocal", "multiphoton", "super-resolution", "sim", "tirf", "spinning-disk", "widefield-fluorescence", "lightsheet", "single-molecule-imaging"],
+    "instruments": [
+      {
+        "name": "Zeiss 980 Airyscan inverted point-scanning confocal",
+        "manufacturer": "Zeiss",
+        "model": "LSM 980 Airyscan",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "super-resolution"],
+        "evidence": "The equipment listing names the inverted point-scanning Airyscan system.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Zeiss 980 Airyscan upright multiphoton confocal",
+        "manufacturer": "Zeiss",
+        "model": "LSM 980 Airyscan",
+        "type": "multiphoton-microscope",
+        "techniques": ["confocal", "multiphoton", "super-resolution"],
+        "evidence": "The equipment listing identifies an upright LSM 980 Airyscan with multiphoton capability.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Nikon SoRa spinning-disc confocal",
+        "manufacturer": "Nikon",
+        "model": "SoRa",
+        "type": "spinning-disk-microscope",
+        "techniques": ["spinning-disk", "super-resolution"],
+        "evidence": "Listed as a Nikon SoRa super-resolution spinning-disc confocal microscope.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Nikon AXR NSPARC",
+        "manufacturer": "Nikon",
+        "model": "AXR NSPARC",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "super-resolution"],
+        "evidence": "Named in the official equipment inventory; the inventory does not further describe its specific modality.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Zeiss Elyra 7",
+        "manufacturer": "Zeiss",
+        "model": "Elyra 7",
+        "type": "super-resolution-microscope",
+        "techniques": ["sim", "tirf", "single-molecule-imaging", "super-resolution", "widefield-fluorescence"],
+        "evidence": "The inventory describes the system as a widefield microscope with Lattice SIM, Apotome, TIRF and SMLM.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Zeiss Z.1 lightsheet microscope",
+        "manufacturer": "Zeiss",
+        "model": "Z.1",
+        "type": "lightsheet-microscope",
+        "techniques": ["lightsheet"],
+        "evidence": "Named in the official special-systems inventory.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Olympus IX-81 ZDC fluorescent widefield microscope",
+        "manufacturer": "Olympus",
+        "model": "IX-81 ZDC",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "Named in the official widefield inventory.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Molecular Devices ImageXpress Micro Confocal",
+        "manufacturer": "Molecular Devices",
+        "model": "ImageXpress Micro",
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "The facility lists the system for high-content screening microscopy.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Zeiss LSM 800",
+        "manufacturer": "Zeiss",
+        "model": "LSM 800",
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "Named in the official confocal equipment inventory.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Leica SPE confocal microscope",
+        "manufacturer": "Leica",
+        "model": "SPE",
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "Named in the official confocal equipment inventory.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Leica SP8 confocal microscope",
+        "manufacturer": "Leica",
+        "model": "SP8",
+        "type": "confocal-microscope",
+        "techniques": ["confocal"],
+        "evidence": "Named in the official confocal equipment inventory.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Zeiss AxioScan Z.1 slide scanner",
+        "manufacturer": "Zeiss",
+        "model": "AxioScan Z.1",
+        "type": "widefield-microscope",
+        "techniques": ["brightfield", "widefield-fluorescence"],
+        "evidence": "Named in the official widefield and slide-scanning inventory.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Zeiss Cell Discoverer 7",
+        "manufacturer": "Zeiss",
+        "model": "Cell Discoverer 7",
+        "type": "live-cell-imager",
+        "techniques": ["widefield-fluorescence", "live-cell-imaging"],
+        "evidence": "Named in the official live-cell imaging inventory.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Leica Thunder Imager",
+        "manufacturer": "Leica",
+        "model": "THUNDER",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "Named in the official widefield inventory.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      },
+      {
+        "name": "Leica MICA",
+        "manufacturer": "Leica",
+        "model": "MICA",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "widefield-fluorescence"],
+        "evidence": "Listed as an inverted fluorescent widefield and confocal imaging system.",
+        "source": "https://www.uclccmd.co.uk/equipment-1"
+      }
+    ],
+    "contact": { "email": "biosciences.imaging@ucl.ac.uk", "name": null, "source": "https://www.uclccmd.co.uk/" },
+    "image": null,
+    "sources": [
+      { "url": "https://www.uclccmd.co.uk/", "checked": "2026-10-20", "notes": "Official facility identity and general contact." },
+      { "url": "https://www.uclccmd.co.uk/equipment-1", "checked": "2026-10-20", "notes": "Official equipment inventory, grouped by confocal, super-resolution, widefield, high-throughput and special systems." },
+      { "url": "https://www.uclccmd.co.uk/locations", "checked": "2026-10-20", "notes": "Official listing of Rockefeller and Anatomy Building locations and postal addresses." },
+      { "url": "https://www.openstreetmap.org/?mlat=51.523732&mlon=-0.1342662#map=18/51.523732/-0.1342662", "checked": "2026-10-20", "notes": "OpenStreetMap building-level map point for 21 University Street." },
+      { "url": "https://www.openstreetmap.org/?mlat=51.5238591&mlon=-0.1341273#map=18/51.5238591/-0.1341273", "checked": "2026-10-20", "notes": "OpenStreetMap road-level map point near the Gower Street location." }
+    ],
+    "lastChecked": "2026-10-20",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "manchester-bioimaging-core-facility",
+    "name": "Bioimaging Core Facility",
+    "institution": "The University of Manchester",
+    "location": {
+      "city": "Manchester",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "Michael Smith Building",
+          "building": "Michael Smith Building",
+          "address": "The University of Manchester, Oxford Road, Manchester M13 9PT",
+          "coordinates": { "lat": 53.4655396, "lng": -2.2280908 },
+          "coordinateAccuracy": "building"
+        }
+      ]
+    },
+    "access": {
+      "status": "unknown",
+      "evidence": "User eligibility is not assessed for directory inclusion.",
+      "source": "https://www.bmh.manchester.ac.uk/research/platforms/bioimaging/"
+    },
+    "techniques": ["widefield-fluorescence", "tirf", "live-cell-imaging"],
+    "instruments": [
+      {
+        "name": "Zeiss AxioImager Z1 fluorescence microscopes (three systems)",
+        "manufacturer": "Zeiss",
+        "model": "AxioImager Z1",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "The facility snapshot explicitly lists three AxioImager Z1 fluorescence microscopes.",
+        "source": "https://www.bmh.manchester.ac.uk/research/platforms/bioimaging/"
+      },
+      {
+        "name": "Leica M205 stereo fluorescence microscope",
+        "manufacturer": "Leica",
+        "model": "M205",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "Named in the official facility snapshot as a stereo fluorescence microscope.",
+        "source": "https://www.bmh.manchester.ac.uk/research/platforms/bioimaging/"
+      },
+      {
+        "name": "Olympus BX63 with colour camera",
+        "manufacturer": "Olympus",
+        "model": "BX63",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence"],
+        "evidence": "Named in the official snapshot among the facility's basic microscope systems.",
+        "source": "https://www.bmh.manchester.ac.uk/research/platforms/bioimaging/"
+      },
+      {
+        "name": "Olympus LV200 bioluminescence system",
+        "manufacturer": "Olympus",
+        "model": "LV200",
+        "type": "other-microscope",
+        "techniques": ["live-cell-imaging"],
+        "evidence": "Listed as a bioluminescence system for long-term live-cell imaging.",
+        "source": "https://www.bmh.manchester.ac.uk/research/platforms/bioimaging/"
+      },
+      {
+        "name": "Zeiss AxioObserver Z1 with motorised XY stage",
+        "manufacturer": "Zeiss",
+        "model": "AxioObserver Z1",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence", "live-cell-imaging"],
+        "evidence": "Listed as an instrument in the facility's bioluminescence systems section.",
+        "source": "https://www.bmh.manchester.ac.uk/research/platforms/bioimaging/"
+      }
+    ],
+    "contact": { "email": null, "name": null, "source": "https://www.bmh.manchester.ac.uk/research/platforms/bioimaging/" },
+    "image": null,
+    "sources": [
+      { "url": "https://www.bmh.manchester.ac.uk/research/platforms/bioimaging/", "checked": "2026-10-20", "notes": "Official Bioimaging Core Facility page: named systems, high-end TIRF and laser microdissection capabilities, and facility address." },
+      { "url": "https://nominatim.openstreetmap.org/search?q=Michael%20Smith%20Building%2C%20Manchester&format=jsonv2&limit=2", "checked": "2026-10-20", "notes": "OpenStreetMap building-level geocoding for Michael Smith Building." }
+    ],
+    "lastChecked": "2026-10-20",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "kcl-cdn-multiuser-advanced-microscopes",
+    "name": "Centre for Developmental Neurobiology Multiuser Advanced Microscopes",
+    "institution": "King's College London",
+    "location": {
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "addresses": [
+        {
+          "site": "Guy's Campus",
+          "building": "New Hunt's House, Centre for Developmental Neurobiology",
+          "address": "Great Maze Pond, London SE1 1UL",
+          "coordinates": { "lat": 51.5029128, "lng": -0.0885393 },
+          "coordinateAccuracy": "building"
+        }
+      ]
+    },
+    "access": {
+      "status": "unknown",
+      "evidence": "User eligibility is not assessed for directory inclusion.",
+      "source": "https://www.kcl.ac.uk/research/facilities/imaging"
+    },
+    "techniques": ["confocal", "lightsheet", "widefield-fluorescence", "brightfield"],
+    "instruments": [
+      {
+        "name": "Zeiss LSM 800 Axio Imager upright with Airyscan",
+        "manufacturer": "Zeiss",
+        "model": "LSM 800 Axio Imager",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "super-resolution"],
+        "evidence": "The facility lists an upright LSM 800 Axio Imager with Airyscan, four laser lines and 5x, 10x, 20x air plus 40x and 63x oil objectives.",
+        "source": "https://www.kcl.ac.uk/research/facilities/imaging"
+      },
+      {
+        "name": "Zeiss LSM 800 Axio Examiner upright with Airyscan",
+        "manufacturer": "Zeiss",
+        "model": "LSM 800 Axio Examiner",
+        "type": "confocal-microscope",
+        "techniques": ["confocal", "super-resolution"],
+        "evidence": "The facility lists an upright LSM 800 Axio Examiner with Airyscan, four laser lines and a high-NA water-dipping objective.",
+        "source": "https://www.kcl.ac.uk/research/facilities/imaging"
+      },
+      {
+        "name": "Zeiss Lightsheet Z.1",
+        "manufacturer": "Zeiss",
+        "model": "Lightsheet Z.1",
+        "type": "lightsheet-microscope",
+        "techniques": ["lightsheet", "live-cell-imaging"],
+        "evidence": "The facility lists live imaging and cleared-sample options with 5x, 10x and 20x magnifications.",
+        "source": "https://www.kcl.ac.uk/research/facilities/imaging"
+      },
+      {
+        "name": "Zeiss AxioScan Z1 automated slide scanner",
+        "manufacturer": "Zeiss",
+        "model": "AxioScan Z1",
+        "type": "widefield-microscope",
+        "techniques": ["widefield-fluorescence", "brightfield"],
+        "evidence": "The facility lists an automated slide scanner with five magnifications.",
+        "source": "https://www.kcl.ac.uk/research/facilities/imaging"
+      }
+    ],
+    "contact": { "email": "anneliese.jarman@kcl.ac.uk", "name": "Anneliese Jarman", "source": "https://www.kcl.ac.uk/research/facilities/imaging" },
+    "image": null,
+    "sources": [
+      { "url": "https://www.kcl.ac.uk/research/facilities/imaging", "checked": "2026-10-20", "notes": "Official Imaging facilities inventory with the CDN multiuser instrument names, capabilities, location and contact." },
+      { "url": "https://www.kcl.ac.uk/visit/new-hunts-house", "checked": "2026-10-20", "notes": "Official building location page." },
+      { "url": "https://nominatim.openstreetmap.org/search?q=New%20Hunt%27s%20House%2C%20London&format=jsonv2&limit=2", "checked": "2026-10-20", "notes": "OpenStreetMap building-level geocoding for New Hunt's House." }
+    ],
+    "lastChecked": "2026-10-20",
+    "reviewStatus": "verified"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "techniques": [
+    { "id": "brightfield", "label": "Brightfield / transmitted light" },
+    { "id": "widefield-fluorescence", "label": "Widefield fluorescence" },
+    { "id": "confocal", "label": "Confocal microscopy" },
+    { "id": "multiphoton", "label": "Multiphoton microscopy" },
+    { "id": "flim", "label": "Fluorescence lifetime imaging (FLIM)" },
+    { "id": "sted", "label": "STED super-resolution" },
+    { "id": "sim", "label": "Structured illumination microscopy (SIM)" },
+    { "id": "super-resolution", "label": "Super-resolution microscopy" },
+    { "id": "lightsheet", "label": "Light-sheet fluorescence microscopy" },
+    { "id": "multiplex", "label": "Multiplex imaging" },
+    { "id": "tirf", "label": "Total internal reflection fluorescence (TIRF)" },
+    { "id": "spinning-disk", "label": "Spinning-disk microscopy" },
+    { "id": "single-molecule-imaging", "label": "Single-molecule imaging" },
+    { "id": "live-cell-imaging", "label": "Live-cell imaging" },
+    { "id": "electron-microscopy", "label": "Electron microscopy" },
+    { "id": "other", "label": "Other microscopy technique" }
+  ],
+  "instrumentTypes": [
+    { "id": "widefield-microscope", "label": "Widefield microscope" },
+    { "id": "confocal-microscope", "label": "Confocal microscope" },
+    { "id": "multiphoton-microscope", "label": "Multiphoton microscope" },
+    { "id": "super-resolution-microscope", "label": "Super-resolution microscope" },
+    { "id": "lightsheet-microscope", "label": "Light-sheet microscope" },
+    { "id": "multiplex-imager", "label": "Multiplex imager" },
+    { "id": "spinning-disk-microscope", "label": "Spinning-disk microscope" },
+    { "id": "tirf-microscope", "label": "TIRF microscope" },
+    { "id": "live-cell-imager", "label": "Live-cell imaging system" },
+    { "id": "other-microscope", "label": "Other microscope" }
+  ]
+}

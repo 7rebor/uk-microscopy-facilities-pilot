@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A human-verified directory of UK microscopy facilities and their core imaging capabilities.">
+  <title>UK Microscopy Facilities Directory — Pilot</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">Independent pilot directory</p>
+      <h1>UK Microscopy Facilities</h1>
+      <p class="intro">Explore UK microscopy facilities by location, imaging modality, and instrument type.</p>
+    </div>
+  </header>
+  <main>
+    <section class="controls" aria-label="Search and filter facilities">
+      <label class="search-label" for="search">Search facilities</label>
+      <input id="search" type="search" placeholder="Facility, university, city, equipment…" autocomplete="off">
+      <div class="filters">
+        <label>Location
+          <select id="location-filter"><option value="">All locations</option></select>
+        </label>
+        <label>Technique
+          <select id="technique-filter"><option value="">All techniques</option></select>
+        </label>
+        <label>Instrument
+          <select id="instrument-filter"><option value="">All instruments</option></select>
+        </label>
+      </div>
+      <div class="results-line">
+        <p id="result-count" aria-live="polite">Loading facilities…</p>
+        <button id="clear-filters" type="button">Clear filters</button>
+      </div>
+    </section>
+    <section class="map-panel" aria-labelledby="facility-map-heading">
+      <div class="map-header">
+        <div>
+          <p class="eyebrow">Coverage</p>
+          <h2 id="facility-map-heading">Facility map</h2>
+        </div>
+        <p class="map-note">Markers update with the active search and filters.</p>
+      </div>
+      <div id="facility-map" aria-label="Map of facility locations"></div>
+    </section>
+    <section id="facility-list" class="facility-list" aria-label="Facilities"></section>
+    <p id="load-error" class="error" role="alert" hidden></p>
+    <footer>
+      <p>Pilot directory. Always confirm access, availability, and instrument details with the facility.</p>
+      <p>Records include source links and last-checked dates. No automated emails are sent.</p>
+    </footer>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
