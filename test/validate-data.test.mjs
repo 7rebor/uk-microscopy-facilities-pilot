@@ -7,5 +7,5 @@ test("published facility records meet the review and provenance requirements", (
     encoding: "utf8",
   });
   assert.equal(result.status, 0, result.stderr || result.stdout);
-  assert.match(result.stdout, /Validated 12 verified facility records/);
+  assert.match(result.stdout, /Validated 15 verified facility records/);
 });
