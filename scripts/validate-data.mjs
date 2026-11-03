@@ -2,9 +2,12 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { URL } from "node:url";
 
+const stripBom = (text) => text.replace(/^\uFEFF/, "");
+const readJson = async (fileUrl) => JSON.parse(stripBom(await readFile(fileUrl, "utf8")));
+
 const root = new URL("../data/", import.meta.url);
-const facilities = JSON.parse(await readFile(new URL("facilities.json", root), "utf8"));
-const taxonomy = JSON.parse(await readFile(new URL("taxonomy.json", root), "utf8"));
+const facilities = await readJson(new URL("facilities.json", root));
+const taxonomy = await readJson(new URL("taxonomy.json", root));
 const techniqueIds = new Set(taxonomy.techniques.map(({ id }) => id));
 const instrumentTypes = new Set(taxonomy.instrumentTypes.map(({ id }) => id));
 const facilityIds = new Set();

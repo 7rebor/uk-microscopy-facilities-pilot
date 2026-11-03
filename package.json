@@ -7,7 +7,9 @@
     "test": "node --test",
     "discover": "node scripts/discover.mjs",
     "archive:scrape": "node scripts/archive-html-scrape.mjs",
-    "extract:html": "node scripts/extract-html-scrape.mjs"
+    "extract:html": "node scripts/extract-html-scrape.mjs",
+    "extract:logos": "node scripts/apply-logo-candidates.mjs",
+    "remove:facility": "node scripts/remove-facility.mjs"
   },
   "devDependencies": {
     "playwright": "^1.56.1"

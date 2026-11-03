@@ -5,11 +5,13 @@ const techniqueFilter = document.querySelector("#technique-filter");
 const instrumentFilter = document.querySelector("#instrument-filter");
 const resultCount = document.querySelector("#result-count");
 const loadError = document.querySelector("#load-error");
+const resetMapSelectionButton = document.querySelector("#reset-map-selection");
 
 let facilities = [];
 let taxonomy = { techniques: [], instrumentTypes: [] };
 let facilityMap;
 let facilityMarkers;
+let selectedMapFacilityId = null;
 
 const techniqueLabels = () => new Map(taxonomy.techniques.map(({ id, label }) => [id, label]));
 const instrumentLabels = () => new Map(taxonomy.instrumentTypes.map(({ id, label }) => [id, label]));
@@ -33,18 +35,15 @@ function addOptions(select, values) {
 }
 
 function setFilters() {
-  addOptions(locationFilter, facilities.flatMap(({ location }) =>
-    [
-      location.city,
-      location.region,
-      ...(location.addresses ?? []).map(({ site }) => site),
-    ].filter(Boolean),
-  ));
-  addOptions(techniqueFilter, taxonomy.techniques);
-  addOptions(instrumentFilter, taxonomy.instrumentTypes);
+  const locationValues = [...new Set(
+    facilities.flatMap(({ location }) => [location.city, location.region]).filter(Boolean),
+  )];
+  addOptions(locationFilter, locationValues);
+  addOptions(techniqueFilter, taxonomy.techniques.filter(({ id }) => id !== "other"));
+  addOptions(instrumentFilter, taxonomy.instrumentTypes.filter(({ id }) => id !== "other-microscope"));
 }
 
-function visibleFacilities() {
+function filterFacilities() {
   const query = searchInput.value.trim().toLocaleLowerCase();
   return facilities.filter((facility) => {
     const searchable = [
@@ -63,8 +62,7 @@ function visibleFacilities() {
 
     const matchesLocation = !locationFilter.value
       || facility.location.city === locationFilter.value
-      || facility.location.region === locationFilter.value
-      || (facility.location.addresses ?? []).some(({ site }) => site === locationFilter.value);
+      || facility.location.region === locationFilter.value;
     const matchesTechnique = !techniqueFilter.value
       || facility.techniques.includes(techniqueFilter.value);
     const matchesInstrument = !instrumentFilter.value
@@ -74,6 +72,25 @@ function visibleFacilities() {
       && matchesTechnique
       && matchesInstrument;
   });
+}
+
+function visibleFacilities() {
+  const matches = filterFacilities();
+
+  if (selectedMapFacilityId && !matches.some(({ id }) => id === selectedMapFacilityId)) {
+    selectedMapFacilityId = null;
+    return matches;
+  }
+
+  if (selectedMapFacilityId) {
+    return matches.filter(({ id }) => id === selectedMapFacilityId);
+  }
+
+  return matches;
+}
+
+function mapFacilities() {
+  return filterFacilities();
 }
 
 function createTag(text) {
@@ -103,12 +120,17 @@ function renderFacility(facility) {
   const top = document.createElement("div");
   top.className = "card-top";
   if (facility.image?.url && facility.image?.permission) {
+    const imageFrame = document.createElement("div");
+    imageFrame.className = "facility-image-shell";
+    imageFrame.style.background = facility.image.background || "linear-gradient(135deg, #d1def4 0%, #b8cce8 100%)";
+    imageFrame.style.backgroundColor = facility.image.background ? "" : "#b8cce8";
     const image = document.createElement("img");
     image.className = "facility-image";
     image.src = facility.image.url;
     image.alt = facility.image.alt || `${facility.institution} image`;
     image.loading = "lazy";
-    top.append(image);
+    imageFrame.append(image);
+    top.append(imageFrame);
   } else {
     const placeholder = document.createElement("div");
     placeholder.className = "image-placeholder";
@@ -164,7 +186,7 @@ function renderFacility(facility) {
   const query = searchInput.value.trim().toLocaleLowerCase();
   const selectedTechniques = techniqueFilter.value
     ? facility.techniques.filter((id) => id === techniqueFilter.value)
-    : facility.techniques;
+    : facility.techniques.filter((id) => id !== "other");
   const matchingTechniques = selectedTechniques.filter((id) =>
     matchesSearchQuery(`${id} ${techniqueLabels().get(id) ?? id}`, query),
   );
@@ -186,7 +208,7 @@ function renderFacility(facility) {
   instruments.className = "tag-group";
   const selectedInstruments = instrumentFilter.value
     ? facility.instruments.filter(({ type }) => type === instrumentFilter.value)
-    : facility.instruments;
+    : facility.instruments.filter(({ type }) => type !== "other-microscope");
   const matchingInstruments = selectedInstruments.filter(({ name, manufacturer, model, type }) =>
     matchesSearchQuery(
       [name, manufacturer, model, instrumentLabels().get(type), type].filter(Boolean).join(" "),
@@ -246,8 +268,12 @@ function renderMap() {
     facilityMarkers = L.layerGroup().addTo(facilityMap);
   }
 
-  const matches = visibleFacilities();
+  const matches = mapFacilities();
   facilityMarkers.clearLayers();
+
+  if (selectedMapFacilityId && !matches.some(({ id }) => id === selectedMapFacilityId)) {
+    selectedMapFacilityId = null;
+  }
 
   const locations = matches
     .flatMap((facility) => facility.location?.addresses ?? [])
@@ -255,7 +281,6 @@ function renderMap() {
     .map(({ coordinates }) => [coordinates.lat, coordinates.lng]);
 
   if (locations.length === 0) {
-    facilityMap.setView([54.5, -3.5], 5);
     return;
   }
 
@@ -263,7 +288,15 @@ function renderMap() {
     for (const site of facility.location?.addresses ?? []) {
       const { lat, lng } = site.coordinates ?? {};
       if (typeof lat !== "number" || typeof lng !== "number") continue;
-      const marker = L.marker([lat, lng]).addTo(facilityMarkers);
+      const isSelected = facility.id === selectedMapFacilityId;
+      const marker = L.circleMarker([lat, lng], {
+        radius: isSelected ? 10 : 8,
+        color: isSelected ? "#f7a64b" : "#8b5cf6",
+        fillColor: isSelected ? "#ffb76b" : "#b38bff",
+        fillOpacity: 0.95,
+        weight: isSelected ? 3 : 2,
+      }).addTo(facilityMarkers);
+
       const popup = document.createElement("div");
       const heading = document.createElement("strong");
       heading.textContent = facility.name;
@@ -275,7 +308,16 @@ function renderMap() {
       accuracy.textContent = `${site.coordinateAccuracy || "approximate"} map point`;
       popup.append(heading, siteName, address, accuracy);
       marker.bindPopup(popup);
+      marker.on("click", (event) => {
+        L.DomEvent.stopPropagation(event);
+        selectedMapFacilityId = facility.id;
+        render();
+      });
     }
+  }
+
+  if (selectedMapFacilityId !== null) {
+    return;
   }
 
   if (locations.length === 1) {
@@ -288,6 +330,7 @@ function renderMap() {
 function render() {
   const matches = visibleFacilities();
   resultCount.textContent = `${matches.length} of ${facilities.length} facilities`;
+  resetMapSelectionButton.hidden = selectedMapFacilityId === null;
   facilityList.replaceChildren();
   if (matches.length === 0) {
     const empty = document.createElement("p");
@@ -310,6 +353,12 @@ document.querySelector("#clear-filters").addEventListener("click", () => {
   locationFilter.value = "";
   techniqueFilter.value = "";
   instrumentFilter.value = "";
+  selectedMapFacilityId = null;
+  render();
+});
+
+resetMapSelectionButton.addEventListener("click", () => {
+  selectedMapFacilityId = null;
   render();
 });
 

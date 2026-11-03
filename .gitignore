@@ -1,4 +1,7 @@
 /data/html_scrape/
 /data/html_scrape_archive/
 /data/extraction-review-queue-*.json
+/data/review-queue.json
+/data/candidates.json
+/data/html_scrape_extracted.json
 data/top_uk_facility_candidates.txt

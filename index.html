@@ -16,35 +16,40 @@
     </div>
   </header>
   <main>
-    <section class="controls" aria-label="Search and filter facilities">
-      <label class="search-label" for="search">Search facilities</label>
-      <input id="search" type="search" placeholder="Facility, university, city, equipment…" autocomplete="off">
-      <div class="filters">
-        <label>Location
-          <select id="location-filter"><option value="">All locations</option></select>
-        </label>
-        <label>Technique
-          <select id="technique-filter"><option value="">All techniques</option></select>
-        </label>
-        <label>Instrument
-          <select id="instrument-filter"><option value="">All instruments</option></select>
-        </label>
-      </div>
-      <div class="results-line">
-        <p id="result-count" aria-live="polite">Loading facilities…</p>
-        <button id="clear-filters" type="button">Clear filters</button>
-      </div>
-    </section>
-    <section class="map-panel" aria-labelledby="facility-map-heading">
-      <div class="map-header">
-        <div>
-          <p class="eyebrow">Coverage</p>
-          <h2 id="facility-map-heading">Facility map</h2>
+    <div class="controls-map-layout">
+      <section class="controls" aria-label="Search and filter facilities">
+        <label class="search-label" for="search">Search facilities</label>
+        <input id="search" type="search" placeholder="Facility, university, city, equipment…" autocomplete="off">
+        <div class="filters">
+          <label>Location
+            <select id="location-filter"><option value="">All locations</option></select>
+          </label>
+          <label>Technique
+            <select id="technique-filter"><option value="">All techniques</option></select>
+          </label>
+          <label>Instrument
+            <select id="instrument-filter"><option value="">All instruments</option></select>
+          </label>
         </div>
-        <p class="map-note">Markers update with the active search and filters.</p>
-      </div>
-      <div id="facility-map" aria-label="Map of facility locations"></div>
-    </section>
+        <div class="results-line">
+          <p id="result-count" aria-live="polite">Loading facilities…</p>
+          <button id="clear-filters" type="button">Clear filters</button>
+        </div>
+      </section>
+      <section class="map-panel" aria-labelledby="facility-map-heading">
+        <div class="map-header">
+          <div>
+            <p class="eyebrow">Coverage</p>
+            <h2 id="facility-map-heading">Facility map</h2>
+          </div>
+          <p class="map-note">Markers update with the active search and filters.</p>
+        </div>
+        <div class="map-shell">
+          <div id="facility-map" aria-label="Map of facility locations"></div>
+          <button id="reset-map-selection" class="map-reset-button" type="button" hidden>Reset results</button>
+        </div>
+      </section>
+    </div>
     <section id="facility-list" class="facility-list" aria-label="Facilities"></section>
     <p id="load-error" class="error" role="alert" hidden></p>
     <footer>

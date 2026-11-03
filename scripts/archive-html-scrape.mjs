@@ -32,9 +32,12 @@ export async function archiveHtmlScrape(metadata = {}) {
 
   const archivedItems = [];
   for (const entry of entries) {
+    const sourceEntry = new URL(`${encodeURIComponent(entry.name)}/`, sourcePath);
+    const archiveEntry = new URL(`${encodeURIComponent(entry.name)}/`, batchPath);
+
     await rename(
-      new URL(encodeURIComponent(entry.name), sourcePath),
-      new URL(encodeURIComponent(entry.name), batchPath),
+      entry.isDirectory() ? sourceEntry : new URL(encodeURIComponent(entry.name), sourcePath),
+      entry.isDirectory() ? archiveEntry : new URL(encodeURIComponent(entry.name), batchPath),
     );
     archivedItems.push({
       name: entry.name,

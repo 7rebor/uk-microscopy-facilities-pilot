@@ -7,8 +7,24 @@ const dataPath = new URL("../data/", import.meta.url);
 const inputPath = new URL("html_scrape/", dataPath);
 const facilitiesPath = new URL("facilities.json", dataPath);
 const maxTextLength = 30_000;
-const entries = await readdir(inputPath, { withFileTypes: true });
-const htmlFiles = entries.filter((entry) => entry.isFile() && /\.html?$/i.test(entry.name));
+
+async function collectHtmlFiles(dirUrl) {
+  const entries = await readdir(dirUrl, { withFileTypes: true });
+  const files = [];
+
+  for (const entry of entries) {
+    const entryUrl = new URL(`${entry.name}${entry.isDirectory() ? "/" : ""}`, dirUrl);
+    if (entry.isDirectory()) {
+      files.push(...await collectHtmlFiles(entryUrl));
+    } else if (entry.isFile() && /\.html?$/i.test(entry.name)) {
+      files.push(entryUrl);
+    }
+  }
+
+  return files;
+}
+
+const htmlFiles = await collectHtmlFiles(inputPath);
 
 if (htmlFiles.length === 0) {
   console.log("No HTML files found in data/html_scrape/. Nothing was changed.");
@@ -22,7 +38,7 @@ if (htmlFiles.length === 0) {
   try {
     pages = [];
     for (const file of htmlFiles) {
-      const html = await readFile(new URL(encodeURIComponent(file.name), inputPath), "utf8");
+      const html = await readFile(file, "utf8");
       const sourceMatch = html.match(/\burl:\s*(https?:\/\/[^\s"'<>]+)/i);
       let sourceUrl = sourceMatch?.[1] ?? null;
       let evidence;
@@ -80,7 +96,7 @@ if (htmlFiles.length === 0) {
         evidence.title,
       );
       pages.push({
-        savedFile: file.name,
+        savedFile: decodeURIComponent(file.href.slice(inputPath.href.length)),
         sourceUrl,
         ...evidence,
         possibleExistingFacilities,
