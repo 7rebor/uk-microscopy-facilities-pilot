@@ -4,4 +4,5 @@
 /data/review-queue.json
 /data/candidates.json
 /data/html_scrape_extracted.json
+/data/curation-ledger/
 data/top_uk_facility_candidates.txt

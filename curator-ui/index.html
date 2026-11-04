@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Local, human-reviewed curator for microscopy facility records.">
+    <title>Microscopy facility curator</title>
+    <link rel="stylesheet" href="/curator.css">
+    <script src="/curator.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Local curator</p>
+        <h1>Microscopy facility review</h1>
+      </div>
+      <div class="topbar-controls">
+        <label for="key-profile">Gemini key</label>
+        <select id="key-profile" aria-label="Gemini API key profile">
+          <option value="personal">Personal</option>
+          <option value="professional">Professional</option>
+        </select>
+        <span class="privacy-pill">Local only · no live crawling</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="toolbar">
+        <div>
+          <h2>Review downloaded pages</h2>
+          <p>Scan <code>data/html_scrape/</code> to create evidence-backed Gemini proposals. Nothing changes in the directory until you accept it here.</p>
+        </div>
+        <button id="scan-button" class="primary-button" type="button">Scan downloaded HTML</button>
+      </section>
+
+      <div id="notice" class="notice" role="status" hidden></div>
+
+      <div class="workspace">
+        <aside class="panel pending-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Pending ledger</p>
+              <h2>Awaiting review <span id="pending-count" class="count-pill">0</span></h2>
+            </div>
+          </div>
+          <p class="muted small">Only unreviewed pages appear here. Accepted items move to <code>merged/</code>; declined items move to <code>checked/</code>.</p>
+          <ul id="pending-list" class="pending-list"></ul>
+        </aside>
+
+        <section id="review-content" class="panel review-panel" aria-live="polite">
+          <div class="empty-state">
+            <h2>Nothing selected</h2>
+            <p>Scan your downloaded pages or select a pending proposal to begin.</p>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <p>Gemini proposals are not verified facts. Confirm evidence and edit fields before accepting. A timestamped backup is made before each approved write.</p>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,11 +1,38 @@
-# uk-microscopy-facilities-pilot
-Test for making an improved UK microscopy facilities database
+# UK Microscopy Facilities Pilot
 
-Saved browser HTML in `data/html_scrape/` is local-only and excluded from Git. After reviewing a batch, run `npm run archive:scrape` to move its contents into a timestamped folder under `data/html_scrape_archive/`. Each archive batch includes a `manifest.json`; running the command again archives any new files separately.
+A source-backed working directory of UK microscopy facilities, with a private local curation tool for reviewing downloaded website pages.
 
-To extract evidence from saved pages, put the HTML files in `data/html_scrape/` and run `npm run extract:html`. The offline extractor reads the saved page content without making network requests, then writes a timestamped `data/extraction-review-queue-*.json` containing the source URL, page text, headings, contact emails, relevant links, and possible matches against existing facilities. It does not edit `facilities.json`: review the evidence and update existing records or add new records only when claims are supported by the official source. Successfully processed input files are moved into a timestamped archive batch, with the review-queue filename recorded in its manifest. The generated queue and raw/archive HTML are local-only and gitignored.
+## Curate downloaded pages
 
-The curated directory currently contains 15 verified facility records, including the Francis Crick Institute, Durham University, and three King's College London imaging centres. This is a source-backed working set, not a ranked UK league table.
+The curator app uses only HTML pages you have already downloaded; it does not crawl websites. Put `.html` or `.htm` files under `data/html_scrape/` (subfolders are supported), then start the app from the repository root:
+
+```bash
+npm run curate
+```
+
+Open the local address printed by the command (by default `http://127.0.0.1:4178/`). Keep the server running while you work. The app binds to the loopback interface and is separate from the public directory at `index.html`.
+
+The app requires one of these environment variables to be set in the environment where Node is started:
+
+- `GEMINI_API_KEY_PERSONAL`
+- `GEMINI_API_KEY_PROFESSIONAL`
+
+The key selector in the app chooses which variable to use. The key itself is never sent to the browser or written to a project file. Optionally set `GEMINI_MODEL` to use a different model (default: `gemini-2.5-flash`) and `CURATOR_PORT` to choose another local port. Do not put API keys in `.env` files committed to Git.
+
+When you scan, the app extracts evidence from the local HTML and sends the page text, headings, links, contact addresses, image candidates, and existing facility summaries to Gemini. This is a third-party API request to Google; do not scan pages containing information you do not want sent to that service. The initial page host/domain is only a batching hint. Gemini may suggest multiple facilities within the same institution and must explain its grouping with page evidence. Review and edit every proposal before accepting it.
+
+For each pending proposal, the UI shows the contributing pages, quoted evidence, uncertainties, and editable facility fields. A live comparison shows the edited proposal beside a selected existing record, and the same selection is used if you choose to merge. Choose to add a new facility, merge the evidence into an existing facility, or decline it. An accepted proposal is checked against the directory schema and taxonomy, a backup of `data/facilities.json` is created, and only then is the record written. An interrupted write is recorded so a completed update can be recovered without applying it twice. Declined proposals are marked checked. Gemini never writes to the published data directly.
+
+Review state is local and Git-ignored under `data/curation-ledger/`:
+
+- `pending/` contains items still awaiting review and is the only folder shown in the app.
+- `merged/` contains accepted items, including the facility ID and backup path.
+- `checked/` contains declined items.
+- `backups/` contains pre-write copies of `facilities.json`.
+
+Page identity combines the source URL and a hash of the downloaded HTML. Re-scanning an unchanged reviewed page will skip it; changed content can be reviewed as new evidence. These folders are local workflow state, not published directory data. Back them up if you need to preserve the review history.
+
+The curated directory is a source-backed working set, not a ranked UK league table.
 
 Removing a facility record from the published data
 
